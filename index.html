@@ -27,7 +27,7 @@
                     <img src="assets/coin.png" alt="" class="max-w-9">
                 </div>
 
-                <div class="badge badge-success text-white p-4 rounded-4xl">2 Copy</div>
+                <div class="badge badge-success text-white p-4 rounded-4xl"><span id="copy-num">0</span> Copy</div>
             </div>
         </div>
     </nav>
@@ -57,7 +57,7 @@
                         <div class="badge badge-sm bg-[#F2F2F2] p-4 rounded-3xl mt-4">সার্বজনীন</div>
                         <br>
                         <div class="flex items-center gap-5  mt-4">
-                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium">Copy</button>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium" id="emergency-copy">Copy</button>
                             <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-green-500 text-white px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium" id="emergency-call">Call</button>
                         </div>    
                     </div>
@@ -76,10 +76,12 @@
                         <div class="badge badge-sm bg-[#F2F2F2] p-4 rounded-3xl mt-4">পুলিশ</div>
                         <br>
                         <div class="flex items-center gap-5  mt-4">
-                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium">Copy</button>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium" id="police-copy">Copy</button>
                             <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-green-500 text-white px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium" id="police-call">Call</button>
                         </div>    
                     </div>
+
+                    <!-- Fire Service Card -->
 
                     <div class="bg-white shadow-lg max-w-[430px] max-h-[360px] p-6 rounded-2xl">
                         <div class="flex items-center justify-between" id="fire">
@@ -93,7 +95,7 @@
                         <div class="badge badge-sm bg-[#F2F2F2] p-4 rounded-3xl mt-4">ফায়ার</div>
                         <br>
                         <div class="flex items-center gap-5  mt-4">
-                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium">Copy</button>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium" id="fire-copy">Copy</button>
                             <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-green-500 text-white px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium" id="fire-call">Call</button>
                         </div>    
                     </div>
@@ -110,7 +112,7 @@
                         <div class="badge badge-sm bg-[#F2F2F2] p-4 rounded-3xl mt-4">সহায়তা</div>
                         <br>
                         <div class="flex items-center gap-5  mt-4">
-                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium">Copy</button>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium" id="woman-copy">Copy</button>
                             <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-green-500 text-white px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium" id="woman-call">Call</button>
                         </div>    
                     </div>
@@ -127,7 +129,7 @@
                         <div class="badge badge-sm bg-[#F2F2F2] p-4 rounded-3xl mt-4">স্বাস্থ্য</div>
                         <br>
                         <div class="flex items-center gap-5  mt-4">
-                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium">Copy</button>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium" id="ambulance-copy">Copy</button>
                             <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-green-500 text-white px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium" id="ambulance-call">Call</button>
                         </div>
                     </div>
@@ -144,7 +146,7 @@
                         <div class="badge badge-sm bg-[#F2F2F2] p-4 rounded-3xl mt-4">সরকারি</div>
                         <br>
                         <div class="flex items-center gap-5  mt-4">
-                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium">Copy</button>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium" id="gov-copy">Copy</button>
                             <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-green-500 text-white px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium" id="gov-call">Call</button>
                         </div>    
                     </div>
@@ -161,7 +163,7 @@
                         <div class="badge badge-sm bg-[#F2F2F2] p-4 rounded-3xl mt-4">বিদ্যুৎ</div>
                         <br>
                         <div class="flex items-center gap-5  mt-4">
-                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium">Copy</button>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium" id="eee-copy">Copy</button>
                             <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-green-500 text-white px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium" id="eee-call">Call</button>
                         </div>
                     </div>
@@ -178,8 +180,8 @@
                         <div class="badge badge-sm bg-[#F2F2F2] p-4 rounded-3xl mt-4">এনজিও</div>
                         <br>
                         <div class="flex items-center gap-5  mt-4">
-                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium">Copy</button>
-                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-green-500 text-white px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium">Call</button>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium" id="brac-copy">Copy</button>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-green-500 text-white px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium" id="brac-call">Call</button>
                         </div> 
                     </div>
 
@@ -195,7 +197,7 @@
                         <div class="badge badge-sm bg-[#F2F2F2] p-4 rounded-3xl mt-4">পরিবহন</div>
                         <br>
                         <div class="flex items-center gap-5  mt-4">
-                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium">Copy</button>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium" id="rail-copy">Copy</button>
                             <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-green-500 text-white px-12 rounded-xl max-w-[180px] max-h-[40px] font-medium" id="rail-call">Call</button>
                         </div>    
                     </div>
@@ -209,9 +211,10 @@
                             <img src="assets/call.png" alt="" class="max-w-[28px]">
                             <h1 class="font-bold">Call History</h1>
                         </div>
-                        <button class="bg-green-400 rounded-xl px-6 py-1 text-white font-bold transition-all duration-100 ease-in hover:bg-green-800 hover:scale-[102%] active:translate-y-0.5">Clear</button>
+                        <button class="bg-green-400 rounded-xl px-6 py-1 text-white font-bold transition-all duration-100 ease-in hover:bg-green-800 hover:scale-[102%] active:translate-y-0.5" id="clear-btn">Clear</button>
                     </div>
-                    <div class="mt-5">no calls dialed</div>
+
+                    <div class="mt-5" id="history-container">No calls dialed</div>
                 </div>
             </div>
         </section>
