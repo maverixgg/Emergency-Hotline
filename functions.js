@@ -3,7 +3,6 @@ let coinCount = document.getElementById('coins')
 let callHistory = []
 let copynum = document.getElementById('copy-num')
 
-
 function addFavorite(id){
     const parent = document.getElementById(id)
     if(parent.querySelector('#empty').style.display === 'none'){
