@@ -31,7 +31,7 @@ function calling(id){
     }
     const serviceName = document.getElementById(`${id}-service`).innerText
     const serviceNumber = document.getElementById(`${id}-number`).innerText
-    alert(`${serviceName}: ${serviceNumber}`)
+    alert(`Calling ${serviceName}: ${serviceNumber}`)
 
     let time = new Date().toLocaleTimeString();
     console.log(time)
